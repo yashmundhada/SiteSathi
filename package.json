@@ -4,10 +4,8 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "start": "npm run server & npm run open",
-    "server": "PORT=3000 NODE_ENV=development tsx server/index.ts",
-    "open": "sleep 3 && open http://localhost:3000 || start http://localhost:3000",
-    "dev": "PORT=3000 NODE_ENV=development tsx server/index.ts"
+    "start": "tsx server/index.ts",
+    "dev": "tsx server/index.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
