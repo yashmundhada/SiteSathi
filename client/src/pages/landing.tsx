@@ -796,7 +796,7 @@ export default function LandingPage() {
                 Ready to Transform Your Construction Management?
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Schedule a personalized demo and see how BuildTrack
+                Schedule a personalized demo and see how SiteSathi
                 can streamline your construction operations.
               </p>
 
