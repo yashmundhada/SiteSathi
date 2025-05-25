@@ -4,7 +4,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "start": "node -e \"const { exec } = require('child_process'); const port = Math.floor(Math.random() * 1000) + 3000; process.env.PORT = port; exec('tsx server/index.ts', () => {}); setTimeout(() => { exec('open http://localhost:' + port + ' || start http://localhost:' + port); }, 3000);\"",
+    "start": "tsx server/index.ts",
     "dev": "tsx server/index.ts"
   },
   "dependencies": {
