@@ -844,7 +844,7 @@ export default function LandingPage() {
                       />
                       <Button
                         type="submit"
-                        className="w-full bg-buildtrack-primary text-white hover:bg-blue-700"
+                        className="w-full bg-sitesathi-primary text-white hover:bg-purple-700"
                         disabled={contactMutation.isPending}
                       >
                         <CalendarCheck className="mr-2 h-5 w-5" />
@@ -859,14 +859,106 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Coming Soon Section */}
+      <section className="py-20 bg-gradient-to-br from-sitesathi-primary to-purple-700 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+              Coming Soon
+            </h2>
+            <p className="text-xl text-purple-100 mb-12 max-w-3xl mx-auto">
+              Exciting new features are on the horizon. Join our waitlist to be the first to experience the future of construction site management.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            {[
+              {
+                icon: Video,
+                title: "AI-Powered Site Analysis",
+                description: "Advanced computer vision to automatically track project progress and identify safety concerns in real-time.",
+                timeline: "Q2 2025"
+              },
+              {
+                icon: Bot,
+                title: "Smart Assistant",
+                description: "AI chatbot to help workers get instant answers about safety protocols, equipment usage, and project updates.",
+                timeline: "Q3 2025"
+              },
+              {
+                icon: Plane,
+                title: "Drone Integration",
+                description: "Automated aerial surveys and progress monitoring with integrated drone technology and 3D mapping.",
+                timeline: "Q4 2025"
+              }
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20"
+              >
+                <feature.icon className="h-12 w-12 text-sitesathi-secondary mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
+                <p className="text-purple-100 mb-4 text-sm leading-relaxed">{feature.description}</p>
+                <div className="inline-block bg-sitesathi-secondary text-white px-3 py-1 rounded-full text-sm font-medium">
+                  {feature.timeline}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-white/15 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto border border-white/20"
+          >
+            <h3 className="text-2xl font-bold mb-4">Be the First to Know</h3>
+            <p className="text-purple-100 mb-6">
+              Get early access to new features and exclusive updates about SiteSathi's development.
+            </p>
+            <form onSubmit={handleWaitlistSubmit} className="flex flex-col sm:flex-row gap-4">
+              <Input
+                type="email"
+                placeholder="Enter your email address"
+                value={waitlistEmail}
+                onChange={(e) => setWaitlistEmail(e.target.value)}
+                className="flex-1 bg-white/20 border-white/30 text-white placeholder:text-purple-200"
+                required
+              />
+              <Button
+                type="submit"
+                className="bg-sitesathi-secondary text-white hover:bg-orange-600 px-8"
+                disabled={waitlistMutation.isPending}
+              >
+                {waitlistMutation.isPending ? "Joining..." : "Join Waitlist"}
+              </Button>
+            </form>
+            <p className="text-purple-200 text-sm mt-4">
+              ✓ Early access to new features • ✓ Exclusive beta testing • ✓ Priority support
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="bg-buildtrack-neutral text-white py-16">
+      <footer className="bg-sitesathi-neutral text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center mb-6">
-                <HardHat className="text-buildtrack-secondary h-8 w-8 mr-3" />
-                <span className="text-2xl font-bold">BuildTrack</span>
+                <HardHat className="text-sitesathi-secondary h-8 w-8 mr-3" />
+                <span className="text-2xl font-bold">SiteSathi</span>
               </div>
               <p className="text-gray-400 mb-6">
                 The complete construction site management platform for modern builders.
