@@ -685,7 +685,7 @@ export default function LandingPage() {
               },
               {
                 quote:
-                  "The fleet management system gives us complete visibility into our vehicles. We've reduced maintenance costs by 30% since implementing BuildTrack.",
+                  "The fleet management system gives us complete visibility into our vehicles. We've reduced maintenance costs by 30% since implementing SiteSathi.",
                 name: 'Michael Chen',
                 title: 'Operations Director, BuildCorp',
               },
