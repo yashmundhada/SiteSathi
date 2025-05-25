@@ -671,7 +671,7 @@ export default function LandingPage() {
             </h2>
             <p className="text-xl text-gray-600">
               See how construction companies are transforming their
-              operations with BuildTrack.
+              operations with SiteSathi.
             </p>
           </div>
 
@@ -679,7 +679,7 @@ export default function LandingPage() {
             {[
               {
                 quote:
-                  'BuildTrack has revolutionized our site management. The biometric attendance feature alone has saved us countless hours in payroll processing.',
+                  'SiteSathi has revolutionized our site management. The biometric attendance feature alone has saved us countless hours in payroll processing.',
                 name: 'Sarah Johnson',
                 title: 'Project Manager, Metro Construction',
               },
