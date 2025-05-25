@@ -64,7 +64,7 @@ app.use((req, res, next) => {
   }
 
   // Use PORT environment variable or default to 5000
-  const port = process.env.PORT || 5000;
+  const port = process.env.PORT || 3000;
   server.listen(
     {
       port,
