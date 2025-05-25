@@ -169,39 +169,39 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <HardHat className="text-buildtrack-secondary h-8 w-8 mr-3" />
-              <span className="text-2xl font-bold text-buildtrack-neutral">BuildTrack</span>
+              <HardHat className="text-sitesathi-secondary h-8 w-8 mr-3" />
+              <span className="text-2xl font-bold text-sitesathi-neutral">SiteSathi</span>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection("features")}
-                className="text-buildtrack-neutral hover:text-buildtrack-primary transition-colors"
+                className="text-sitesathi-neutral hover:text-sitesathi-primary transition-colors"
               >
                 Features
               </button>
               <button
                 onClick={() => scrollToSection("solutions")}
-                className="text-buildtrack-neutral hover:text-buildtrack-primary transition-colors"
+                className="text-sitesathi-neutral hover:text-sitesathi-primary transition-colors"
               >
                 Solutions
               </button>
               <button
                 onClick={() => scrollToSection("testimonials")}
-                className="text-buildtrack-neutral hover:text-buildtrack-primary transition-colors"
+                className="text-sitesathi-neutral hover:text-sitesathi-primary transition-colors"
               >
                 Testimonials
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-buildtrack-neutral hover:text-buildtrack-primary transition-colors"
+                className="text-sitesathi-neutral hover:text-sitesathi-primary transition-colors"
               >
                 Contact
               </button>
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-buildtrack-primary text-white hover:bg-blue-700"
+                className="bg-sitesathi-primary text-white hover:bg-purple-700"
               >
                 Request Demo
               </Button>
@@ -226,31 +226,31 @@ export default function LandingPage() {
             <div className="px-4 py-2 space-y-2">
               <button
                 onClick={() => scrollToSection("features")}
-                className="block w-full text-left text-buildtrack-neutral hover:text-buildtrack-primary py-2"
+                className="block w-full text-left text-sitesathi-neutral hover:text-sitesathi-primary py-2"
               >
                 Features
               </button>
               <button
                 onClick={() => scrollToSection("solutions")}
-                className="block w-full text-left text-buildtrack-neutral hover:text-buildtrack-primary py-2"
+                className="block w-full text-left text-sitesathi-neutral hover:text-sitesathi-primary py-2"
               >
                 Solutions
               </button>
               <button
                 onClick={() => scrollToSection("testimonials")}
-                className="block w-full text-left text-buildtrack-neutral hover:text-buildtrack-primary py-2"
+                className="block w-full text-left text-sitesathi-neutral hover:text-sitesathi-primary py-2"
               >
                 Testimonials
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="block w-full text-left text-buildtrack-neutral hover:text-buildtrack-primary py-2"
+                className="block w-full text-left text-sitesathi-neutral hover:text-sitesathi-primary py-2"
               >
                 Contact
               </button>
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="w-full bg-buildtrack-primary text-white hover:bg-blue-700 mt-2"
+                className="w-full bg-sitesathi-primary text-white hover:bg-purple-700 mt-2"
               >
                 Request Demo
               </Button>
@@ -279,7 +279,7 @@ export default function LandingPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-buildtrack-secondary text-white hover:bg-orange-600"
+                  className="bg-sitesathi-secondary text-white hover:bg-orange-600"
                   onClick={() => scrollToSection("contact")}
                 >
                   <Play className="mr-2 h-5 w-5" />
@@ -325,10 +325,10 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
-              { stat: "98%", label: "Attendance Accuracy", color: "text-buildtrack-primary" },
-              { stat: "50%", label: "Time Savings", color: "text-buildtrack-secondary" },
-              { stat: "24/7", label: "Real-time Tracking", color: "text-buildtrack-accent" },
-              { stat: "500+", label: "Active Sites", color: "text-buildtrack-primary" },
+              { stat: "98%", label: "Attendance Accuracy", color: "text-sitesathi-primary" },
+              { stat: "50%", label: "Time Savings", color: "text-sitesathi-secondary" },
+              { stat: "24/7", label: "Real-time Tracking", color: "text-sitesathi-accent" },
+              { stat: "500+", label: "Active Sites", color: "text-sitesathi-primary" },
             ].map((item, index) => (
               <motion.div
                 key={index}

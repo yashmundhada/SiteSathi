@@ -24,12 +24,12 @@
   --ring: 20 14.3% 4.1%;
   --radius: 0.5rem;
   
-  /* Custom colors for BuildTrack */
-  --buildtrack-primary: 252 75% 56%; /* Purple #5541D7 */
-  --buildtrack-secondary: 25 95% 53%; /* Orange */
-  --buildtrack-accent: 158 64% 52%; /* Green */
-  --buildtrack-neutral: 210 11% 25%; /* Dark Gray */
-  --buildtrack-light: 210 11% 98%; /* Light Gray */
+  /* Custom colors for SiteSathi */
+  --sitesathi-primary: 252 75% 56%; /* Purple #5541D7 */
+  --sitesathi-secondary: 25 95% 53%; /* Orange */
+  --sitesathi-accent: 158 64% 52%; /* Green */
+  --sitesathi-neutral: 210 11% 25%; /* Dark Gray */
+  --sitesathi-light: 210 11% 98%; /* Light Gray */
 }
 
 .dark {
@@ -71,7 +71,7 @@
 
 @layer components {
   .gradient-bg {
-    background: linear-gradient(135deg, hsl(var(--buildtrack-primary)) 0%, hsl(252 75% 40%) 100%);
+    background: linear-gradient(135deg, hsl(var(--sitesathi-primary)) 0%, hsl(252 75% 40%) 100%);
   }
   
   .feature-card {
@@ -84,39 +84,39 @@
 }
 
 @layer utilities {
-  .text-buildtrack-primary {
-    color: hsl(var(--buildtrack-primary));
+  .text-sitesathi-primary {
+    color: hsl(var(--sitesathi-primary));
   }
   
-  .text-buildtrack-secondary {
-    color: hsl(var(--buildtrack-secondary));
+  .text-sitesathi-secondary {
+    color: hsl(var(--sitesathi-secondary));
   }
   
-  .text-buildtrack-accent {
-    color: hsl(var(--buildtrack-accent));
+  .text-sitesathi-accent {
+    color: hsl(var(--sitesathi-accent));
   }
   
-  .text-buildtrack-neutral {
-    color: hsl(var(--buildtrack-neutral));
+  .text-sitesathi-neutral {
+    color: hsl(var(--sitesathi-neutral));
   }
   
-  .bg-buildtrack-primary {
-    background-color: hsl(var(--buildtrack-primary));
+  .bg-sitesathi-primary {
+    background-color: hsl(var(--sitesathi-primary));
   }
   
-  .bg-buildtrack-secondary {
-    background-color: hsl(var(--buildtrack-secondary));
+  .bg-sitesathi-secondary {
+    background-color: hsl(var(--sitesathi-secondary));
   }
   
-  .bg-buildtrack-accent {
-    background-color: hsl(var(--buildtrack-accent));
+  .bg-sitesathi-accent {
+    background-color: hsl(var(--sitesathi-accent));
   }
   
-  .bg-buildtrack-neutral {
-    background-color: hsl(var(--buildtrack-neutral));
+  .bg-sitesathi-neutral {
+    background-color: hsl(var(--sitesathi-neutral));
   }
   
-  .bg-buildtrack-light {
-    background-color: hsl(var(--buildtrack-light));
+  .bg-sitesathi-light {
+    background-color: hsl(var(--sitesathi-light));
   }
 }
