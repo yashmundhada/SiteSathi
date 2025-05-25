@@ -338,7 +338,7 @@ export default function LandingPage() {
                 className="animate-on-scroll"
               >
                 <div className={`text-4xl font-bold ${item.color} mb-2`}>{item.stat}</div>
-                <div className="text-buildtrack-neutral">{item.label}</div>
+                <div className="text-sitesathi-neutral">{item.label}</div>
               </motion.div>
             ))}
           </div>
@@ -346,10 +346,10 @@ export default function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-20 bg-buildtrack-light">
+      <section id="features" className="py-20 bg-sitesathi-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-on-scroll">
-            <h2 className="text-4xl font-bold text-buildtrack-neutral mb-6">
+            <h2 className="text-4xl font-bold text-sitesathi-neutral mb-6">
               Comprehensive Construction Management
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -365,15 +365,15 @@ export default function LandingPage() {
                 title: "Biometric Attendance",
                 description: "Track labor attendance with advanced biometric verification including fingerprint, facial recognition, and RFID integration.",
                 features: ["Geolocation verification", "Multi-language support", "Real-time clock in/out"],
-                color: "text-buildtrack-primary",
-                bgColor: "bg-blue-50",
+                color: "text-sitesathi-primary",
+                bgColor: "bg-purple-50",
               },
               {
                 icon: Truck,
                 title: "Fleet Management",
                 description: "Monitor vehicle locations, track maintenance schedules, and optimize fleet operations with real-time GPS tracking.",
                 features: ["Real-time GPS tracking", "Maintenance scheduling", "Usage statistics"],
-                color: "text-buildtrack-secondary",
+                color: "text-sitesathi-secondary",
                 bgColor: "bg-orange-50",
               },
               {
@@ -381,7 +381,7 @@ export default function LandingPage() {
                 title: "Inventory & Procurement",
                 description: "Manage materials, track inventory levels, and streamline procurement processes with automated reorder points.",
                 features: ["Material tracking", "Automated reordering", "Supplier management"],
-                color: "text-buildtrack-accent",
+                color: "text-sitesathi-accent",
                 bgColor: "bg-green-50",
               },
               {
@@ -389,15 +389,15 @@ export default function LandingPage() {
                 title: "Task Management",
                 description: "Assign tasks, track progress, and ensure project milestones are met with comprehensive project management tools.",
                 features: ["Progress tracking", "Team collaboration", "Deadline management"],
-                color: "text-buildtrack-primary",
-                bgColor: "bg-blue-50",
+                color: "text-sitesathi-primary",
+                bgColor: "bg-purple-50",
               },
               {
                 icon: TrendingUp,
                 title: "Financial Tracking",
                 description: "Monitor project costs, track expenses, and generate detailed financial reports for better budget management.",
                 features: ["Cost tracking", "Budget management", "Financial reporting"],
-                color: "text-buildtrack-secondary",
+                color: "text-sitesathi-secondary",
                 bgColor: "bg-orange-50",
               },
               {
@@ -405,7 +405,7 @@ export default function LandingPage() {
                 title: "Document Management",
                 description: "Store, organize, and share project documents securely with version control and access permissions.",
                 features: ["Secure storage", "Version control", "Access permissions"],
-                color: "text-buildtrack-accent",
+                color: "text-sitesathi-accent",
                 bgColor: "bg-green-50",
               },
             ].map((feature, index) => (
