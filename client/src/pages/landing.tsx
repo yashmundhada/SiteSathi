@@ -186,7 +186,7 @@ export default function LandingPage() {
             <div className="flex items-center">
               <HardHat className="text-sitesathi-secondary h-8 w-8 mr-3" />
               <span className="text-2xl font-bold text-sitesathi-neutral">
-                SiteSathi
+                Siteसाथी
               </span>
             </div>
 
