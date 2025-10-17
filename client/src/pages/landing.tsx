@@ -184,10 +184,11 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <HardHat className="text-sitesathi-secondary h-8 w-8 mr-3" />
-              <span className="text-2xl font-bold text-sitesathi-neutral">
-                Siteसाथी
-              </span>
+              <img
+                src="/public/logo.jpg"
+                alt="Logo"
+                className="h-10 w-auto object-contain"
+              />
             </div>
 
             {/* Desktop Navigation */}
@@ -272,8 +273,17 @@ export default function LandingPage() {
               </button>
               <Button
                 onClick={() => scrollToSection('contact')}
-                className="w-full bg-sitesathi-primary text-white hover:bg-purple-700 mt-2">
+                className="bg-sitesathi-primary text-black  bg-white">
                 Request Demo
+              </Button>
+              <Button
+                onClick={() => {
+                  window.location.assign(
+                    'https://frontend-xk0v.onrender.com/'
+                  );
+                }}
+                className="bg-sitesathi-primary text-white hover:bg-purple-700">
+                Login / Signup
               </Button>
             </div>
           </div>
