@@ -185,7 +185,7 @@ export default function LandingPage() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <img
-                src="/public/logo.jpg"
+                src="/logo.jpg"
                 alt="Logo"
                 className="h-10 w-auto object-contain"
               />
