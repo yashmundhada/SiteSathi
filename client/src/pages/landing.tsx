@@ -214,8 +214,17 @@ export default function LandingPage() {
               </button>
               <Button
                 onClick={() => scrollToSection('contact')}
-                className="bg-sitesathi-primary text-white hover:bg-purple-700">
+                className="text-sitesathi-neutral hover:text-sitesathi-primary transition-colors">
                 Request Demo
+              </Button>
+              <Button
+                onClick={() => {
+                  window.location.assign(
+                    'https://frontend-xk0v.onrender.com/'
+                  );
+                }}
+                className="bg-sitesathi-primary text-white hover:bg-purple-700">
+                Login / Signup
               </Button>
             </div>
 
@@ -796,8 +805,8 @@ export default function LandingPage() {
                 Ready to Transform Your Construction Management?
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Schedule a personalized demo and see how SiteSathi
-                can streamline your construction operations.
+                Schedule a personalized demo and see how SiteSathi can
+                streamline your construction operations.
               </p>
 
               <div className="space-y-6">
