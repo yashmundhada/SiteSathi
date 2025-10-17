@@ -214,7 +214,7 @@ export default function LandingPage() {
               </button>
               <Button
                 onClick={() => scrollToSection('contact')}
-                className="text-sitesathi-neutral hover:text-sitesathi-primary transition-colors">
+                className="bg-sitesathi-primary text-black  bg-white">
                 Request Demo
               </Button>
               <Button
