@@ -221,7 +221,7 @@ export default function LandingPage() {
               <Button
                 onClick={() => {
                   window.location.assign(
-                    'https://frontend-xk0v.onrender.com/'
+                    'https://studio.sitesathi.in/'
                   );
                 }}
                 className="bg-sitesathi-primary text-white hover:bg-purple-700">
@@ -279,7 +279,7 @@ export default function LandingPage() {
               <Button
                 onClick={() => {
                   window.location.assign(
-                    'https://frontend-xk0v.onrender.com/'
+                    'https://studio.sitesathi.in/'
                   );
                 }}
                 className="bg-sitesathi-primary text-white hover:bg-purple-700">
